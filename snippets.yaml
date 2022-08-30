@@ -9,6 +9,9 @@
     - name: todo.sql
       title: TODO list
       description: Build a basic todo list with Row Level Security
+    - name: profiles.sql
+      title: Profiles
+      description: Sets up a public Profiles table
 - section: Scripts
   snippets:
     - name: columns.sql
@@ -20,3 +23,14 @@
     - name: show_version.sql
       title: Show version
       description: get POSTGRES version
+- section: User management starter
+  snippets: 
+    - name: users.sql
+      title: Users
+      description: Random users data for demo purposes
+    - name: profiles.sql
+      title: Profiles
+      description: Sets up a public Profiles table      
+    - name: profiles-data.sql
+      title: Profiles data
+      description: Profiles data to use with users data
