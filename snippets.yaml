@@ -34,3 +34,6 @@
     - name: profiles-data.sql
       title: Profiles data
       description: Profiles data to use with users data
+    - name: truncate-users-profiles.sql
+      title: Delete mocking data
+      description: Delete users and profiles mocking data
