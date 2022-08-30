@@ -12,6 +12,9 @@
     - name: profiles.sql
       title: Profiles
       description: Sets up a public Profiles table
+    - name: news-reader.sql
+      title: News reader
+      description: News reader demo base
 - section: Scripts
   snippets:
     - name: columns.sql
