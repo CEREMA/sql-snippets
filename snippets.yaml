@@ -6,4 +6,17 @@
     - name: slack.sql
       title: Slack clone
       description: Build a basic Slack clone with RLS enabled
-      
+    - name: todo.sql
+      title: TODO list
+      description: Build a basic todo list with Row Level Security
+- section: Scripts
+  snippets:
+    - name: columns.sql
+      title: Add column
+      description: Template to add a column. Make sure to change the name and type.
+    - name: create_table.sql
+      title: Create table
+      description: Basic table template. Change "table_name" to the name you prefer.
+    - name: show_version.sql
+      title: Show version
+      description: get POSTGRES version
