@@ -10,7 +10,7 @@ create table public.users (
   status      user_status default 'OFFLINE'::public.user_status
 );
 comment on table public.users is 'Profile data for each user.';
-comment on column public.users.id is 'References the internal Supabase Auth user.';
+comment on column public.users.id is 'References the internal Omneedia Auth user.';
 
 -- CHANNELS
 create table public.channels (
@@ -153,16 +153,16 @@ create trigger on_auth_user_created
 
 begin;
   -- remove the realtime publication
-  drop publication if exists supabase_realtime;
+  drop publication if exists omneedia_realtime;
 
   -- re-create the publication but don't enable it for any tables
-  create publication supabase_realtime;
+  create publication omneedia_realtime;
 commit;
 
 -- add tables to the publication
-alter publication supabase_realtime add table public.channels;
-alter publication supabase_realtime add table public.messages;
-alter publication supabase_realtime add table public.users;
+alter publication omneedia_realtime add table public.channels;
+alter publication omneedia_realtime add table public.messages;
+alter publication omneedia_realtime add table public.users;
 
 -- DUMMY DATA
 insert into public.users (id, username)
