@@ -3,40 +3,19 @@
     - name: countries.sql
       title: Countries
       description: Create a table with all the countries in the world
-    - name: slack.sql
-      title: Slack clone
-      description: Build a basic Slack clone with RLS enabled
-    - name: todo.sql
-      title: TODO list
-      description: Build a basic todo list with Row Level Security
-    - name: profiles.sql
-      title: Profiles
-      description: Sets up a public Profiles table
-    - name: news-reader.sql
-      title: News reader
-      description: News reader demo base
 - section: Scripts
   snippets:
     - name: columns.sql
       title: Add column
-      description: Template to add a column. Make sure to change the name and type.
+      description: Ajoute une colonne.
     - name: create_table.sql
       title: Create table
-      description: Basic table template. Change "table_name" to the name you prefer.
+      description: Création basique d'une table
     - name: show_version.sql
       title: Show version
-      description: get POSTGRES version
+      description: retourne la version de POSTGRES
 - section: User management starter
   snippets: 
     - name: users.sql
       title: Users
-      description: Random users data for demo purposes
-    - name: profiles.sql
-      title: Profiles
-      description: Sets up a public Profiles table      
-    - name: profiles-data.sql
-      title: Profiles data
-      description: Profiles data to use with users data
-    - name: truncate-users-profiles.sql
-      title: Delete mocking data
-      description: Delete users and profiles mocking data
+      description: Retourne les utilisateurs de la table users
